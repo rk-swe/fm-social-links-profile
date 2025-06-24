@@ -1,14 +1,31 @@
 @font-face {
-  font-family: "Inter";
+  font-family: "Inter Variable";
   src: url("./fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
 }
 
 :root {
+  /* font-weight */
   --fw-regular: 400;
   --fw-semi-bold: 600;
   --fw-bold: 700;
+
+  /* color */
+
+  /* font-family */
+  --ff-base: "Inter Variable", sans-serif;
+
+  /* spacing */
+  --sp-300: 1.5rem; /* 24px */
+  --sp-150: 0.75rem; /* 12px */
+  --sp-100: 0.5rem; /* 8px */
+  --sp-50: 0.25rem; /* 4px */
+
+  /* font-size */
+  --fs-large: 1.5rem; /* 24px */
+  --fs-medium: 1rem; /* 16px */
+  --fs-small: 0.875rem; /* 14px */
 }
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -33,8 +50,12 @@
 body {
   /* 4. Add accessible line-height */
   line-height: 1.5;
+
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
+
+  /* For whole page*/
+  font-family: var(--ff-base);
 }
 
 /* 6. Improve media defaults */
@@ -77,4 +98,13 @@ h4,
 h5,
 h6 {
   text-wrap: balance;
+}
+
+.wrapper {
+  /* padding-inline: var(--sp-300); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--clr-primary);
 }
