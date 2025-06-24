@@ -7,6 +7,11 @@
 
 :root {
   /* color */
+  --clr-black: hsl(0, 0%, 7.84%);
+  --clr-grey-dark: hsl(0, 0%, 12.2%);
+  --clr-grey-light: hsl(0, 0%, 20%);
+  --clr-white-light: hsl(0, 0%, 100%);
+  --clr-light-green: hsl(74.8, 75.88%, 64.35%);
 
   /* font-family */
   --ff-base: "Inter Variable", sans-serif;
@@ -116,4 +121,25 @@ h6 {
 .card {
   max-width: var(--card-max-width);
   border-radius: var(--card-border-radius);
+}
+
+.card-header {
+}
+
+.card-avatar {
+}
+
+.card-heading {
+}
+
+.card-address {
+}
+
+.card-quote {
+}
+
+.card-nav {
+}
+
+.card-nav-link {
 }
