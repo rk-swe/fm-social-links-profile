@@ -6,15 +6,20 @@
 }
 
 :root {
+  /* color */
+
+  /* font-family */
+  --ff-base: "Inter Variable", sans-serif;
+
   /* font-weight */
   --fw-regular: 400;
   --fw-semi-bold: 600;
   --fw-bold: 700;
 
-  /* color */
-
-  /* font-family */
-  --ff-base: "Inter Variable", sans-serif;
+  /* font-size */
+  --fs-large: 1.5rem; /* 24px */
+  --fs-medium: 1rem; /* 16px */
+  --fs-small: 0.875rem; /* 14px */
 
   /* spacing */
   --sp-300: 1.5rem; /* 24px */
@@ -22,10 +27,8 @@
   --sp-100: 0.5rem; /* 8px */
   --sp-50: 0.25rem; /* 4px */
 
-  /* font-size */
-  --fs-large: 1.5rem; /* 24px */
-  --fs-medium: 1rem; /* 16px */
-  --fs-small: 0.875rem; /* 14px */
+  --card-max-width: 24rem;
+  --card-border-radius: 1.25rem;
 }
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -54,7 +57,7 @@ body {
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
 
-  /* For whole page*/
+  /* For whole page */
   font-family: var(--ff-base);
 }
 
@@ -101,10 +104,16 @@ h6 {
 }
 
 .wrapper {
-  /* padding-inline: var(--sp-300); */
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: var(--clr-primary);
+
+  padding-inline: var(--sp-300);
+  /* background-color: var(--clr-primary); */
+}
+
+.card {
+  max-width: var(--card-max-width);
+  border-radius: var(--card-border-radius);
 }
