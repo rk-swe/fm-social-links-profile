@@ -1,0 +1,21 @@
+{
+  "name": "social-links-profile-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Social links profile coding challenge](./preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "vite build",
+    "deploy": "gh-pages --nojekyll -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^6.3.0",
+    "vite": "^7.0.0"
+  }
+}
