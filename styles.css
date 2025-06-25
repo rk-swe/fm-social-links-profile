@@ -36,6 +36,7 @@
 
   --card-max-width: 24rem;
   --card-border-radius: 1.25rem;
+  --link-border-radius: 0.5rem;
 }
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -146,22 +147,34 @@ h6 {
 .card-heading {
   color: var(--clr-white);
   font-weight: var(--fw-bold);
+  text-align: center;
 }
 
 .card-address {
   color: var(--clr-green);
   font-style: normal;
   font-weight: var(--fw-semi-bold);
+  text-align: center;
 }
 
 .card-quote {
   color: var(--clr-white);
+  text-align: center;
 }
 
-.card-nav ul {
+.card-nav-ul {
   list-style: none;
   padding: 0;
   margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-150);
+}
+
+.card-nav-li {
+  width: 100%;
 }
 
 .card-nav {
@@ -175,4 +188,11 @@ h6 {
 
   display: block;
   text-align: center;
+
+  padding-block: var(--sp-100);
+  width: 100%;
+
+  border-radius: var(--link-border-radius);
+
+  text-decoration: none;
 }
