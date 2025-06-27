@@ -196,10 +196,15 @@ h6 {
   display: block;
   text-align: center;
 
-  padding-block: var(--sp-100);
+  padding-block: var(--sp-150);
   width: 100%;
 
   border-radius: var(--link-border-radius);
 
   text-decoration: none;
+}
+
+.card-nav-link:hover {
+  background-color: var(--clr-green);
+  color: var(--clr-grey-900);
 }
